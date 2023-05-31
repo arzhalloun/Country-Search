@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Jquery Mission JB - Arz</title>
+   
+</head>
+<body>
+    <!--main container div-->
+    <div class="container">
+        <!--Title-->
+        <h1>World Countries Statistics</h1>
+        <br>
+
+        <!--Search Section-->
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control searchInput"  placeholder="Please Enter The Country Name...">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <button type="button" class="btn btn-primary searchBtn mr-3" >Search</button>
+                        <button type="button" class="btn btn-secondary getAllBtn mr-3">Get All</button>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+ 
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        
+        <!--Search Statistics-->
+        <div id="main-div">
+            
+            <h2>Search Statistics :</h2>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col"><span id="totalCountries"></span></th>
+                    <th scope="col"><span id="totalPopulation"></span></th>
+                    <th scope="col"><span id="averagePopulation"></span></th>    
+                </tr>
+                </thead>
+            </table>
+
+            <!--Country name + population-->
+            <h2>Countries Found :</h2>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Population</th>
+                </tr>
+                </thead>
+                <tbody id="countriesSection">
+                </tbody>
+            </table>
+
+            <!--Region of the country-->
+            <h2>Country Region :</h2>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Region</th>
+                    <th scope="col">Number of countries</th>
+                </tr>
+                </thead>
+                <tbody id="regionSection">
+                </tbody>
+            </table>
+
+            <!--Currency Section-->
+            <h2>Currencies :</h2>
+            <table class="table table-bordered border-primary">
+                <thead>
+                <tr>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Numbers of Countries using this currency</th>
+                </tr>
+                </thead>
+                  <tbody id="currencySection">
+                  </tbody>
+              </table>
+            </div>
+          </div>
+       
+</body>
+</html>
